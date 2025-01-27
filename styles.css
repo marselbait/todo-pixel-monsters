@@ -1,23 +1,56 @@
+/* Modern Design */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
     margin: 0;
     padding: 20px;
+    color: #333;
 }
 
 .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
 }
 
 #taskInput {
-    width: calc(100% - 90px);
+    width: calc(100% - 120px);
     padding: 10px;
+    border: 2px solid #4a90e2;
+    border-radius: 5px;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
 #addTaskBtn {
     padding: 10px 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addTaskBtn:hover {
+    background-color: #357abd;
 }
 
 ul {
@@ -26,12 +59,14 @@ ul {
 }
 
 li {
-    background: #fff;
+    background: #f9f9f9;
     padding: 10px;
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .completed {
@@ -39,23 +74,61 @@ li {
     color: #888;
 }
 
+button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
 #monsterContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 20px;
 }
 
 .monster {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background: #000;
     display: grid;
-    grid-template-columns: repeat(5, 10px);
-    grid-template-rows: repeat(5, 10px);
+    grid-template-columns: repeat(5, 12px);
+    grid-template-rows: repeat(5, 12px);
     gap: 1px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .pixel {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 2px;
+}
+
+/* Done Tab */
+#doneTab {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#doneList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#doneList li {
+    background: #e8f0fe;
+    color: #333;
 }
